@@ -29,7 +29,7 @@ void MethodOne()
 */
 void MethodTwo() 
 {
-  int weekDay = 5; // 0 = Monday, 6 = Sunday. 
+  int weekDay = 0; // 0 = Monday, 6 = Sunday. 
   boolean weekend = false;
   
   if (weekDay < 5)
