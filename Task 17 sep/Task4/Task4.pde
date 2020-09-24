@@ -42,5 +42,5 @@ void sorter(int[] x) {
    }
   }
 
-Sorter = nested For loop. 
-vi venter til vi bruger array list. på engelsk.
+//Sorter = nested For loop. 
+//vi venter til vi bruger array list. på engelsk.
