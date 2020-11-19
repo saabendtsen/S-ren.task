@@ -1,1 +1,38 @@
 
+
+TASK 1:
+use sakila;
+-- SELECT * FROM actor WHERE last_name = "CAGE";
+-- SELECT * FROM actor WHERE NOT first_name in ("ZERO", "NICK");
+-- SELECT * FROM actor WHERE first_name in ("NICK", "JOHNNY","JAMES", "MORGAN", "WHOOPI");
+-- SELECT * FROM actor WHERE actor_id BETWEEN "50" AND "150";
+-- SELECT * FROM actor WHERE first_name like "C%";
+-- SELECT * FROM actor ORDER BY first_name;
+-- SELECT * FROM actor ORDER BY last_name;
+-- SELECT COUNT(*) FROM actor;
+-- SELECT count(distinct first_name) FROM actor;
+-- SELECT distinct * FROM actor ORDER BY first_name;
+
+
+TASK 2:
+USE sakila;
+-- INSERT INTO actor (First_name, last_name) VALUES ("Søren", "Bendtsen");
+-- SELECT * FROM actor Where first_name = "Søren";
+-- SELECT * FROM film;
+-- INSERT INTO film_actor (actor_id, film_id) values (201,6);
+-- INSERT INTO film_actor (actor_id, film_id) values (201,8);
+-- INSERT INTO film_actor (actor_id, film_id) values (201,10);
+-- INSERT INTO film_actor (actor_id, film_id) values (201,12);
+-- INSERT INTO film_actor (actor_id, film_id) values (201,15);
+
+-- UPDATE actor SET first_name = "Bendtsen bag hver en buks" where actor_id = 201;
+-- SELECT * from actor where actor_id = 201;
+
+-- DELETE FROM film_actor where actor_id = 201;
+-- DELETE FROM actor WHERE actor_id = 201;
+Task 3.
+-- Use sakila;
+-- SElect * from category;
+
+SELECT * FROM film AS f
+JOIN film_category AS fc ON f.film_id = fc.film_id where category_id = 11;
